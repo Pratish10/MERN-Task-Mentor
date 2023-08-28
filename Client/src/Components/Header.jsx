@@ -11,11 +11,23 @@ const Header = () => {
   };
 
   return (
-    <Box bg="#3C3C3C" color="white" p={4} display="flex" alignItems="center">
+    <Box
+      bg="#3C3C3C"
+      color="white"
+      p={4}
+      display="flex"
+      alignItems="center"
+      justifyContent="space-between"
+    >
       <Text fontSize="lg">MERN Stack Assignment</Text>
-      <Link to="/record-video">Video Recording</Link>
-      <Link to="/record-screen">Screen Recording</Link>
+      <div>
+        <Link to="/record-video">Video Recording</Link>
+      </div>
+      <div>
+        <Link to="/record-screen">Screen Recording</Link>
+      </div>
       {token && <Button onClick={logout}>Logout</Button>}
+      <div></div>
     </Box>
   );
 };
