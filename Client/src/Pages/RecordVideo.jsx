@@ -39,7 +39,7 @@ const RecordVideo = () => {
 
         try {
           const response = await fetch(
-            `http://localhost:8000/api/webcam/upload/${userId}`,
+            `https://mern-task-mentor.onrender.com/api/webcam/upload/${userId}`,
             {
               method: "POST",
               headers: {

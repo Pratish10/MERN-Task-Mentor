@@ -79,7 +79,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/user/register",
+        "https://mern-task-mentor.onrender.com/api/user/register",
         data
       );
       toast({

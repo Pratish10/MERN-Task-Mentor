@@ -35,7 +35,7 @@ const RecordScreen = () => {
 
         try {
           const response = await fetch(
-            `http://localhost:8000/api/screencapture/upload/${userId}`,
+            `https://mern-task-mentor.onrender.com/api/screencapture/upload/${userId}`,
             {
               method: "POST",
               headers: {
